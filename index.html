@@ -1048,747 +1048,863 @@
 
             <!-- Slide 8: CI/CD Pipeline Flow -->
             <section class="slide">
+
+                <!-- Header -->
                 <div class="slide-header">
                     <div>
-                        <h2 class="text-3xl font-bold text-slate-900">CI/CD
-                            Pipeline Flow</h2>
-                        <p class="text-slate-500 mt-1">Triggered Automatically
-                            on Every Push to <code
-                                class="text-brand-600 font-bold">main</code></p>
+                        <h2 class="text-3xl font-bold text-slate-900">
+                            CI/CD Pipeline Flow
+                        </h2>
+
+                        <p class="text-slate-500 mt-1">
+                            Triggered Automatically on Every Push to
+                            <code class="text-brand-600 font-bold">main</code>
+                        </p>
                     </div>
+
                     <i
                         class="fa-solid fa-rotate-right text-brand-500 text-3xl"></i>
                 </div>
+
+                <!-- Content -->
                 <div
-                    class="bg-slate-900 rounded-2xl p-7 mb-8 text-white shadow-xl flex items-center justify-between">
-                    <div class="flex items-center">
+                    class="slide-content flex flex-col justify-center bg-slate-50">
+
+                    <div class="w-full max-w-6xl mx-auto">
+
+                        <!-- =====================================================
+                 SCHEDULE BANNER
+                 ===================================================== -->
                         <div
-                            class="w-16 h-16 bg-brand-500/20 border border-brand-500/40 rounded-xl flex items-center justify-center mr-5">
-                            <i
-                                class="fa-solid fa-clock text-brand-400 text-3xl"></i>
-                        </div>
+                            class="bg-slate-900 rounded-2xl p-6 mb-6 text-white shadow-xl flex items-center justify-between">
 
-                    </div>
-                    <div>
-                        <div
-                            class="text-sm text-slate-400 uppercase tracking-wider font-bold mb-1">
-                            Execution Schedule
-                        </div>
-                        <div class="text-2xl font-bold">
-                            Every Sunday at 01:00 AM
-                        </div>
-                        <div class="text-sm text-slate-400 mt-1">
-                            Weekly automated execution — no manual
-                            trigger required
-                        </div>
-                    </div>
-                    <div
-                        class="slide-content flex flex-col justify-center bg-slate-50 h-full">
+                            <!-- Left -->
+                            <div class="flex items-center">
 
-                        <div
-                            class="w-full bg-white p-10 rounded-2xl border border-slate-200 shadow-xl relative">
-
-                            <div
-                                class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-emerald-500 to-indigo-500 rounded-t-2xl"></div>
-
-                            <!-- Flow Steps -->
-                            <div
-                                class="flex justify-between items-center relative mt-8 mb-16">
-                                <!-- Connecting Line -->
                                 <div
-                                    class="absolute top-1/2 left-0 w-full h-1.5 bg-slate-200 -translate-y-1/2 z-0 rounded-full"></div>
+                                    class="w-14 h-14 bg-brand-500/20 border border-brand-500/40 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
 
-                                <!-- Step 1 -->
-                                <div
-                                    class="relative z-10 bg-white p-5 rounded-xl border-2 border-blue-200 shadow-md text-center w-56 flex flex-col items-center">
-                                    <div
-                                        class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-white shadow-sm">1</div>
-                                    <h4
-                                        class="font-bold text-slate-800 text-lg mb-1">Lint
-                                        & Test</h4>
-                                    <div
-                                        class="text-xs text-slate-500 font-mono bg-slate-100 px-2 py-0.5 rounded mb-3">~1m
-                                        13s</div>
-                                    <p
-                                        class="text-sm text-blue-700 font-medium">Synthetic
-                                        CI dataset +<br>all 71 validation
-                                        tests</p>
+                                    <i
+                                        class="fa-solid fa-clock text-brand-400 text-2xl">
+                                    </i>
+
                                 </div>
 
-                                <!-- Step 2 -->
-                                <div
-                                    class="relative z-10 bg-white p-5 rounded-xl border-2 border-emerald-200 shadow-md text-center w-56 flex flex-col items-center">
-                                    <div
-                                        class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-white shadow-sm">2</div>
-                                    <h4
-                                        class="font-bold text-slate-800 text-lg mb-1">Train
-                                        & Evaluate</h4>
-                                    <div
-                                        class="text-xs text-slate-500 font-mono bg-slate-100 px-2 py-0.5 rounded mb-3">~1m
-                                        45s</div>
-                                    <p
-                                        class="text-sm text-emerald-700 font-medium">3
-                                        distinct MLflow runs<br>Accuracy Gate >
-                                        0.87</p>
-                                </div>
+                                <div>
 
-                                <!-- Step 3 -->
-                                <div
-                                    class="relative z-10 bg-white p-5 rounded-xl border-2 border-indigo-200 shadow-md text-center w-56 flex flex-col items-center">
                                     <div
-                                        class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-white shadow-sm">3</div>
-                                    <h4
-                                        class="font-bold text-slate-800 text-lg mb-1">Build
-                                        & Push</h4>
-                                    <div
-                                        class="text-xs text-slate-500 font-mono bg-slate-100 px-2 py-0.5 rounded mb-3">~5m
-                                        10s</div>
-                                    <p
-                                        class="text-sm text-indigo-700 font-medium">Docker
-                                        image creation<br>Push to DockerHub</p>
-                                </div>
+                                        class="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1">
+                                        Execution Schedule
+                                    </div>
 
-                                <!-- Step 4 -->
-                                <div
-                                    class="relative z-10 bg-slate-800 p-5 rounded-xl border-2 border-slate-700 shadow-md text-center w-56 flex flex-col items-center text-white">
-                                    <div
-                                        class="w-12 h-12 bg-slate-700 text-white rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-slate-800 shadow-sm">4</div>
-                                    <h4
-                                        class="font-bold text-white text-lg mb-1">Summary
-                                        Output</h4>
-                                    <div
-                                        class="text-xs text-slate-400 font-mono bg-slate-700 px-2 py-0.5 rounded mb-3">~4s</div>
-                                    <p
-                                        class="text-sm text-brand-300 font-medium">GitHub
-                                        Step Summary<br>Markdown Table
-                                        generation</p>
+                                    <div class="text-xl font-bold">
+                                        Every Sunday at 01:00 AM
+                                    </div>
+
+                                    <div class="text-xs text-slate-400 mt-1">
+                                        Weekly automated execution — no manual
+                                        trigger required
+                                    </div>
+
                                 </div>
 
                             </div>
 
+                            <!-- Right -->
+                            <div
+                                class="bg-emerald-500/10 border border-emerald-500/30 rounded-xl px-5 py-3 text-center flex-shrink-0">
+
+                                <div
+                                    class="text-xs text-emerald-400 uppercase font-bold mb-1">
+                                    Execution Mode
+                                </div>
+
+                                <div class="text-emerald-300 font-bold">
+                                    Scheduled + Push
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- =====================================================
+                 CI/CD FLOW
+                 ===================================================== -->
+                        <div
+                            class="w-full bg-white p-8 rounded-2xl border border-slate-200 shadow-xl relative">
+
+                            <!-- Top gradient -->
+                            <div
+                                class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-emerald-500 to-indigo-500 rounded-t-2xl">
+                            </div>
+
+                            <!-- Flow Steps -->
+                            <div
+                                class="flex justify-between items-center relative mt-6 mb-12">
+
+                                <!-- Connecting Line -->
+                                <div
+                                    class="absolute top-1/2 left-0 w-full h-1.5 bg-slate-200 -translate-y-1/2 z-0 rounded-full">
+                                </div>
+
+                                <!-- =================================================
+                         STEP 1
+                         ================================================= -->
+                                <div
+                                    class="relative z-10 bg-white p-5 rounded-xl border-2 border-blue-200 shadow-md text-center w-56 flex flex-col items-center">
+
+                                    <div
+                                        class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-white shadow-sm">
+                                        1
+                                    </div>
+
+                                    <h4
+                                        class="font-bold text-slate-800 text-lg mb-1">
+                                        Lint & Test
+                                    </h4>
+
+                                    <div
+                                        class="text-xs text-slate-500 font-mono bg-slate-100 px-2 py-0.5 rounded mb-3">
+                                        ~1m 13s
+                                    </div>
+
+                                    <p
+                                        class="text-sm text-blue-700 font-medium">
+                                        Synthetic CI dataset +<br>
+                                        all 71 validation tests
+                                    </p>
+
+                                </div>
+
+                                <!-- =================================================
+                         STEP 2
+                         ================================================= -->
+                                <div
+                                    class="relative z-10 bg-white p-5 rounded-xl border-2 border-emerald-200 shadow-md text-center w-56 flex flex-col items-center">
+
+                                    <div
+                                        class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-white shadow-sm">
+                                        2
+                                    </div>
+
+                                    <h4
+                                        class="font-bold text-slate-800 text-lg mb-1">
+                                        Train & Evaluate
+                                    </h4>
+
+                                    <div
+                                        class="text-xs text-slate-500 font-mono bg-slate-100 px-2 py-0.5 rounded mb-3">
+                                        ~1m 45s
+                                    </div>
+
+                                    <p
+                                        class="text-sm text-emerald-700 font-medium">
+                                        3 distinct MLflow runs<br>
+                                        Accuracy Gate &gt; 0.87
+                                    </p>
+
+                                </div>
+
+                                <!-- =================================================
+                         STEP 3
+                         ================================================= -->
+                                <div
+                                    class="relative z-10 bg-white p-5 rounded-xl border-2 border-indigo-200 shadow-md text-center w-56 flex flex-col items-center">
+
+                                    <div
+                                        class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-white shadow-sm">
+                                        3
+                                    </div>
+
+                                    <h4
+                                        class="font-bold text-slate-800 text-lg mb-1">
+                                        Build & Push
+                                    </h4>
+
+                                    <div
+                                        class="text-xs text-slate-500 font-mono bg-slate-100 px-2 py-0.5 rounded mb-3">
+                                        ~5m 10s
+                                    </div>
+
+                                    <p
+                                        class="text-sm text-indigo-700 font-medium">
+                                        Docker image creation<br>
+                                        Push to DockerHub
+                                    </p>
+
+                                </div>
+
+                                <!-- =================================================
+                         STEP 4
+                         ================================================= -->
+                                <div
+                                    class="relative z-10 bg-slate-800 p-5 rounded-xl border-2 border-slate-700 shadow-md text-center w-56 flex flex-col items-center text-white">
+
+                                    <div
+                                        class="w-12 h-12 bg-slate-700 text-white rounded-full flex items-center justify-center text-xl font-bold mb-3 border-4 border-slate-800 shadow-sm">
+                                        4
+                                    </div>
+
+                                    <h4
+                                        class="font-bold text-white text-lg mb-1">
+                                        Summary Output
+                                    </h4>
+
+                                    <div
+                                        class="text-xs text-slate-400 font-mono bg-slate-700 px-2 py-0.5 rounded mb-3">
+                                        ~4s
+                                    </div>
+
+                                    <p
+                                        class="text-sm text-brand-300 font-medium">
+                                        GitHub Step Summary<br>
+                                        Markdown Table generation
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- =====================================================
+                     SUCCESS MESSAGE
+                     ===================================================== -->
                             <div
                                 class="text-center text-lg font-bold text-emerald-700 bg-emerald-50 py-4 px-6 rounded-lg border border-emerald-200 mx-10 flex justify-center items-center">
+
                                 <i
-                                    class="fa-solid fa-check-circle text-2xl mr-3"></i>
+                                    class="fa-solid fa-check-circle text-2xl mr-3">
+                                </i>
+
                                 Fully automated process — no manual steps
                                 required
                                 between a push to main and a validated
                                 production
                                 image available on DockerHub.
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="slide-footer">
-                        <span>MLOps Pipeline — News Classification | IT Handoff
-                            Report</span>
-                        <span>8</span>
-                    </div>
-                </section>
-
-                <!-- Slide 9: Scheduled Maintenance Job -->
-                <section class="slide">
-                    <div class="slide-header">
-                        <div>
-                            <h2
-                                class="text-3xl font-bold text-slate-900">Scheduled
-                                Maintenance Job</h2>
-                            <p class="text-slate-500 mt-1">Automated weekly
-                                maintenance within the same GitHub Actions
-                                CI</p>
-                        </div>
-                        <i
-                            class="fa-solid fa-calendar-days text-brand-500 text-3xl"></i>
-                    </div>
-
-                    <div
-                        class="slide-content bg-slate-50 flex items-center justify-center">
-                        <div class="w-full max-w-6xl">
-
-                            <!-- Schedule Banner -->
-                            <div
-                                class="bg-slate-900 rounded-2xl p-7 mb-8 text-white shadow-xl flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <div
-                                        class="w-16 h-16 bg-brand-500/20 border border-brand-500/40 rounded-xl flex items-center justify-center mr-5">
-                                        <i
-                                            class="fa-solid fa-clock text-brand-400 text-3xl"></i>
-                                    </div>
-                                    <div>
-                                        <div
-                                            class="text-sm text-slate-400 uppercase tracking-wider font-bold mb-1">
-                                            Execution Schedule
-                                        </div>
-                                        <div class="text-2xl font-bold">
-                                            Every Sunday at 01:00 AM
-                                        </div>
-                                        <div
-                                            class="text-sm text-slate-400 mt-1">
-                                            Weekly automated execution — no
-                                            manual
-                                            trigger required
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-emerald-500/10 border border-emerald-500/30 rounded-xl px-5 py-3 text-center">
-                                    <div
-                                        class="text-xs text-emerald-400 uppercase font-bold mb-1">
-                                        Execution Mode
-                                    </div>
-                                    <div class="text-emerald-300 font-bold">
-                                        Scheduled Job
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Flow -->
-                            <div
-                                class="bg-white rounded-2xl border border-slate-200 shadow-lg p-8">
-
-                                <div
-                                    class="flex items-center justify-between gap-4">
-
-                                    <!-- Step 1 -->
-                                    <div
-                                        class="flex-1 bg-blue-50 border-2 border-blue-200 rounded-xl p-5 text-center">
-                                        <div
-                                            class="w-12 h-12 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-3">
-                                            <i
-                                                class="fa-solid fa-calendar-check"></i>
-                                        </div>
-                                        <h4
-                                            class="font-bold text-slate-800 mb-2">1.
-                                            Schedule</h4>
-                                        <p class="text-sm text-slate-600">
-                                            GitHub Actions triggers the
-                                            maintenance
-                                            job every Sunday at 01:00 AM.
-                                        </p>
-                                    </div>
-
-                                    <i
-                                        class="fa-solid fa-arrow-right text-slate-300 text-2xl"></i>
-
-                                    <!-- Step 2 -->
-                                    <div
-                                        class="flex-1 bg-purple-50 border-2 border-purple-200 rounded-xl p-5 text-center">
-                                        <div
-                                            class="w-12 h-12 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xl mb-3">
-                                            <i class="fa-solid fa-database"></i>
-                                        </div>
-                                        <h4
-                                            class="font-bold text-slate-800 mb-2">2.
-                                            Update Data</h4>
-                                        <p class="text-sm text-slate-600">
-                                            Executes ingestion and preprocessing
-                                            to
-                                            obtain the latest available data.
-                                        </p>
-                                    </div>
-
-                                    <i
-                                        class="fa-solid fa-arrow-right text-slate-300 text-2xl"></i>
-
-                                    <!-- Step 3 -->
-                                    <div
-                                        class="flex-1 bg-amber-50 border-2 border-amber-200 rounded-xl p-5 text-center">
-                                        <div
-                                            class="w-12 h-12 mx-auto bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-xl mb-3">
-                                            <i
-                                                class="fa-solid fa-magnifying-glass-chart"></i>
-                                        </div>
-                                        <h4
-                                            class="font-bold text-slate-800 mb-2">3.
-                                            Monitor Drift</h4>
-                                        <p class="text-sm text-slate-600">
-                                            Runs <code
-                                                class="bg-white px-1.5 py-0.5 rounded font-mono text-xs">monitor.py</code>
-                                            and generates the drift report.
-                                        </p>
-                                    </div>
-
-                                    <i
-                                        class="fa-solid fa-arrow-right text-slate-300 text-2xl"></i>
-
-                                    <!-- Step 4 -->
-                                    <div
-                                        class="flex-1 bg-emerald-50 border-2 border-emerald-200 rounded-xl p-5 text-center">
-                                        <div
-                                            class="w-12 h-12 mx-auto bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl mb-3">
-                                            <i class="fa-solid fa-rotate"></i>
-                                        </div>
-                                        <h4
-                                            class="font-bold text-slate-800 mb-2">4.
-                                            Maintain Model</h4>
-                                        <p class="text-sm text-slate-600">
-                                            If maintenance criteria are met, the
-                                            training and evaluation process can
-                                            be
-                                            executed.
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                                <!-- Bottom explanation -->
-                                <div class="mt-8 grid grid-cols-3 gap-5">
-
-                                    <div
-                                        class="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                                        <div
-                                            class="flex items-center text-slate-700 font-bold mb-2">
-                                            <i
-                                                class="fa-solid fa-code-branch text-brand-500 mr-2"></i>
-                                            Same CI Workflow
-                                        </div>
-                                        <p
-                                            class="text-xs text-slate-500 leading-relaxed">
-                                            The maintenance process is
-                                            implemented
-                                            as an additional job in the existing
-                                            GitHub Actions CI workflow.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                                        <div
-                                            class="flex items-center text-slate-700 font-bold mb-2">
-                                            <i
-                                                class="fa-solid fa-chart-line text-brand-500 mr-2"></i>
-                                            Periodic Monitoring
-                                        </div>
-                                        <p
-                                            class="text-xs text-slate-500 leading-relaxed">
-                                            Weekly execution provides a
-                                            recurring
-                                            checkpoint to identify changes in
-                                            the
-                                            incoming data distribution.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                                        <div
-                                            class="flex items-center text-slate-700 font-bold mb-2">
-                                            <i
-                                                class="fa-solid fa-file-lines text-brand-500 mr-2"></i>
-                                            Traceable Results
-                                        </div>
-                                        <p
-                                            class="text-xs text-slate-500 leading-relaxed">
-                                            Execution results and generated
-                                            reports
-                                            remain available in the GitHub
-                                            Actions
-                                            run history and artifacts.
-                                        </p>
-                                    </div>
-
-                                </div>
 
                             </div>
 
                         </div>
-                    </div>
-
-                    <div class="slide-footer">
-                        <span>MLOps Pipeline — News Classification | IT Handoff
-                            Report</span>
-                        <span>9</span>
-                    </div>
-                </section>
-
-                <!-- Slide 9: Model Registry & Gate -->
-                <section class="slide">
-                    <div class="slide-header">
-                        <div>
-                            <h2 class="text-3xl font-bold text-slate-900">Model
-                                Registry & Promotion Gate</h2>
-                            <p class="text-slate-500 mt-1">Safeguarding
-                                Production
-                                Quality</p>
-                        </div>
-                        <i
-                            class="fa-solid fa-shield-halved text-brand-500 text-3xl"></i>
-                    </div>
-                    <div
-                        class="slide-content bg-slate-50 flex items-center justify-center h-full">
-
-                        <div class="flex gap-12 w-full max-w-5xl">
-                            <!-- Visual representation -->
-                            <div
-                                class="w-1/2 flex flex-col items-center justify-center space-y-6 relative">
-
-                                <div
-                                    class="bg-white p-6 rounded-2xl shadow border-2 border-slate-200 text-center w-full relative z-10">
-                                    <h4 class="font-bold text-slate-700 mb-2">3
-                                        MLflow Runs</h4>
-                                    <p class="text-xs text-slate-500">Compared
-                                        on
-                                        validation accuracy</p>
-                                </div>
-
-                                <div
-                                    class="h-10 w-1 bg-yellow-400 absolute top-20 z-0"></div>
-                                <i
-                                    class="fa-solid fa-arrow-down absolute top-28 z-0 text-yellow-500"></i>
-
-                                <div
-                                    class="bg-yellow-50 p-6 rounded-2xl shadow-md border-2 border-yellow-300 text-center w-full relative z-10">
-                                    <h4
-                                        class="font-bold text-yellow-800 text-xl mb-1 flex items-center justify-center"><i
-                                            class="fa-solid fa-triangle-exclamation mr-2"></i>
-                                        Accuracy Gate</h4>
-                                    <p
-                                        class="text-sm font-bold text-yellow-700 bg-yellow-200 py-1 rounded mt-2">Must
-                                        exceed threshold: > 0.87</p>
-                                </div>
-
-                                <div
-                                    class="h-10 w-1 bg-emerald-400 absolute top-56 z-0"></div>
-                                <i
-                                    class="fa-solid fa-arrow-down absolute top-64 z-0 text-emerald-500"></i>
-
-                                <div
-                                    class="bg-emerald-50 p-6 rounded-2xl shadow-lg border-2 border-emerald-400 text-center w-full relative z-10 mt-4">
-                                    <h4
-                                        class="font-bold text-emerald-800 text-xl mb-1 flex items-center justify-center"><i
-                                            class="fa-solid fa-check-double mr-2"></i>
-                                        Production</h4>
-                                    <p
-                                        class="text-sm text-emerald-700 font-medium">Promoted
-                                        in MLflow Model Registry</p>
-                                </div>
-                            </div>
-
-                            <!-- Text description -->
-                            <div
-                                class="w-1/2 flex flex-col justify-center space-y-8">
-                                <div>
-                                    <h3
-                                        class="text-2xl font-bold text-slate-800 mb-3 flex items-center">
-                                        <span
-                                            class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">1</span>
-                                        The Gate Mechanism
-                                    </h3>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        The best run, determined by validation
-                                        accuracy during the CI/CD pipeline, is
-                                        registered in the <strong>MLflow Model
-                                            Registry</strong>. It is then
-                                        immediately evaluated against a
-                                        hardcoded
-                                        accuracy gate.
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg shadow-sm">
-                                    <p
-                                        class="text-slate-700 text-sm font-medium">
-                                        This gate is the main safeguard the IT
-                                        team
-                                        relies on. A degraded model that
-                                        performs
-                                        worse than the baseline (0.87) can
-                                        <strong>never</strong> reach the serving
-                                        layer automatically.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h3
-                                        class="text-2xl font-bold text-slate-800 mb-3 flex items-center">
-                                        <span
-                                            class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">2</span>
-                                        Fallback Strategy
-                                    </h3>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        The FastAPI service loads the Production
-                                        model from MLflow at startup. However,
-                                        it
-                                        incorporates a local <code
-                                            class="bg-slate-100 px-1 rounded font-mono text-sm">.pkl</code>
-                                        fallback if the tracking server is
-                                        unreachable. This ensures the API stays
-                                        highly available even during MLflow
-                                        maintenance windows.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
-                    <div class="slide-footer">
-                        <span>MLOps Pipeline — News Classification | IT Handoff
-                            Report</span>
-                        <span>9</span>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="slide-footer">
+
+                    <span>
+                        MLOps Pipeline — News Classification | IT Handoff Report
+                    </span>
+
+                    <span>8</span>
+
+                </div>
+
+            </section>
+
+            <!-- Slide 9: Scheduled Maintenance Job -->
+            <section class="slide">
+                <div class="slide-header">
+                    <div>
+                        <h2
+                            class="text-3xl font-bold text-slate-900">Scheduled
+                            Maintenance Job</h2>
+                        <p class="text-slate-500 mt-1">Automated weekly
+                            maintenance within the same GitHub Actions
+                            CI</p>
                     </div>
-                </section>
+                    <i
+                        class="fa-solid fa-calendar-days text-brand-500 text-3xl"></i>
+                </div>
 
-                <!-- Slide 10: CT & CM -->
-                <section class="slide">
-                    <div class="slide-header">
-                        <div>
-                            <h2
-                                class="text-3xl font-bold text-slate-900">Continuous
-                                Training & Monitoring</h2>
-                            <p class="text-slate-500 mt-1">Handling Data Drift
-                                and
-                                Model Degradation</p>
-                        </div>
-                        <i
-                            class="fa-solid fa-chart-line text-brand-500 text-3xl"></i>
-                    </div>
-                    <div
-                        class="slide-content bg-slate-50 flex flex-col items-center justify-center h-full">
+                <div
+                    class="slide-content bg-slate-50 flex items-center justify-center">
+                    <div class="w-full max-w-6xl">
 
-                        <div class="text-center mb-10 max-w-3xl">
-                            <h3
-                                class="text-2xl font-bold text-slate-800 mb-4">Detecting
-                                Concept and Data Drift in Production</h3>
-                            <p class="text-slate-600 text-lg">We utilize
-                                <strong>Evidently AI</strong> to monitor
-                                statistical
-                                shifts between the original training reference
-                                data
-                                and live production inference data.</p>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-8 w-full max-w-5xl">
-
-                            <!-- CM -->
-                            <div
-                                class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-500">
-                                <div class="flex items-center mb-6">
-                                    <i
-                                        class="fa-solid fa-magnifying-glass-chart text-3xl text-blue-500 mr-4"></i>
-                                    <h4
-                                        class="text-xl font-bold text-slate-800">Continuous
-                                        Monitoring (CM)</h4>
-                                </div>
-                                <ul class="space-y-4 text-slate-600">
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i>
-                                        <span>Tracks
-                                            <strong>Kolmogorov-Smirnov</strong>
-                                            and
-                                            <strong>PSI</strong> metrics to
-                                            detect
-                                            shifts in feature
-                                            distributions.</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i>
-                                        <span>Monitors <strong>F1-score
-                                                degradation</strong> over time
-                                            as
-                                            new ground-truth labels are
-                                            acquired.</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i>
-                                        <span>Generates HTML reports saved to
-                                            <code
-                                                class="bg-slate-100 text-sm px-1 rounded">reports/drift_report.html</code>.</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- CT -->
-                            <div
-                                class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-emerald-500">
-                                <div class="flex items-center mb-6">
-                                    <i
-                                        class="fa-solid fa-robot text-3xl text-emerald-500 mr-4"></i>
-                                    <h4
-                                        class="text-xl font-bold text-slate-800">Continuous
-                                        Training (CT)</h4>
-                                </div>
-                                <ul class="space-y-4 text-slate-600">
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-arrow-right text-emerald-500 mt-1 mr-3"></i>
-                                        <span><strong>Automatic retraining
-                                                trigger:</strong> Activated when
-                                            monitoring metrics exceed the
-                                            predefined
-                                            degradation threshold.</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-arrow-right text-emerald-500 mt-1 mr-3"></i>
-                                        <span>Pipeline executes a fresh run
-                                            using
-                                            <code
-                                                class="bg-slate-100 text-sm px-1 rounded">dvc
-                                                repro</code> on updated
-                                            datasets.</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-arrow-right text-emerald-500 mt-1 mr-3"></i>
-                                        <span>Candidate models are registered in
-                                            MLflow for A/B validation against
-                                            the
-                                            current production model.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="slide-footer">
-                        <span>MLOps Pipeline — News Classification | IT Handoff
-                            Report</span>
-                        <span>10</span>
-                    </div>
-                </section>
-
-                <!-- Slide 11: Ongoing Maintenance Tasks -->
-                <section class="slide">
-                    <div class="slide-header">
-                        <div>
-                            <h2
-                                class="text-3xl font-bold text-slate-900">Ongoing
-                                Monitoring & Maintenance Tasks</h2>
-                            <p class="text-slate-500 mt-1">Routine IT Operations
-                                Checklist</p>
-                        </div>
-                        <i
-                            class="fa-solid fa-clipboard-check text-brand-500 text-3xl"></i>
-                    </div>
-                    <div
-                        class="slide-content bg-slate-50 flex items-center justify-center">
-
+                        <!-- Schedule Banner -->
                         <div
-                            class="w-full max-w-4xl bg-white p-10 rounded-2xl shadow-lg border border-slate-200">
-                            <ul class="space-y-8">
-
-                                <li class="flex items-start">
+                            class="bg-slate-900 rounded-2xl p-7 mb-8 text-white shadow-xl flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div
+                                    class="w-16 h-16 bg-brand-500/20 border border-brand-500/40 rounded-xl flex items-center justify-center mr-5">
+                                    <i
+                                        class="fa-solid fa-clock text-brand-400 text-3xl"></i>
+                                </div>
+                                <div>
                                     <div
-                                        class="flex-shrink-0 w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mr-5">
-                                        <i class="fa-solid fa-chart-pie"></i>
+                                        class="text-sm text-slate-400 uppercase tracking-wider font-bold mb-1">
+                                        Execution Schedule
                                     </div>
-                                    <div>
-                                        <h4
-                                            class="text-lg font-bold text-slate-800 mb-1">Feature
-                                            Drift Monitoring (Evidently AI)</h4>
-                                        <p
-                                            class="text-slate-600 text-sm leading-relaxed">
-                                            The system compares 6 text-derived
-                                            features (length, word count, avg.
-                                            word
-                                            length, sentence count, uppercase &
-                                            digit ratios) against the training
-                                            reference using PSI. Alerts trigger
-                                            when
-                                            PSI exceeds the threshold.
-                                        </p>
+                                    <div class="text-2xl font-bold">
+                                        Every Sunday at 01:00 AM
                                     </div>
-                                </li>
-
-                                <li class="flex items-start">
                                     <div
-                                        class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-xl mr-5">
+                                        class="text-sm text-slate-400 mt-1">
+                                        Weekly automated execution — no
+                                        manual
+                                        trigger required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-emerald-500/10 border border-emerald-500/30 rounded-xl px-5 py-3 text-center">
+                                <div
+                                    class="text-xs text-emerald-400 uppercase font-bold mb-1">
+                                    Execution Mode
+                                </div>
+                                <div class="text-emerald-300 font-bold">
+                                    Scheduled Job
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flow -->
+                        <div
+                            class="bg-white rounded-2xl border border-slate-200 shadow-lg p-8">
+
+                            <div
+                                class="flex items-center justify-between gap-4">
+
+                                <!-- Step 1 -->
+                                <div
+                                    class="flex-1 bg-blue-50 border-2 border-blue-200 rounded-xl p-5 text-center">
+                                    <div
+                                        class="w-12 h-12 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-3">
                                         <i
-                                            class="fa-regular fa-calendar-check"></i>
+                                            class="fa-solid fa-calendar-check"></i>
                                     </div>
-                                    <div>
-                                        <h4
-                                            class="text-lg font-bold text-slate-800 mb-1">Recommended
-                                            Maintenance Cadence</h4>
-                                        <p
-                                            class="text-slate-600 text-sm leading-relaxed">
-                                            Run the <code
-                                                class="bg-slate-100 px-1 rounded">monitor.py</code>
-                                            script on a scheduled cron job
-                                            (e.g.,
-                                            weekly) and review the generated
-                                            drift
-                                            report. Re-run <code
-                                                class="bg-slate-100 px-1 rounded">dvc
-                                                repro</code> manually to retrain
-                                            if
-                                            drift is detected or accuracy
-                                            degrades
-                                            in production logs.
-                                        </p>
-                                    </div>
-                                </li>
+                                    <h4
+                                        class="font-bold text-slate-800 mb-2">1.
+                                        Schedule</h4>
+                                    <p class="text-sm text-slate-600">
+                                        GitHub Actions triggers the
+                                        maintenance
+                                        job every Sunday at 01:00 AM.
+                                    </p>
+                                </div>
 
-                                <li class="flex items-start">
-                                    <div
-                                        class="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-xl mr-5">
-                                        <i class="fa-solid fa-key"></i>
-                                    </div>
-                                    <div>
-                                        <h4
-                                            class="text-lg font-bold text-slate-800 mb-1">Security
-                                            & Access Management</h4>
-                                        <p
-                                            class="text-slate-600 text-sm leading-relaxed">
-                                            Rotate the DockerHub access token
-                                            periodically for security
-                                            compliance.
-                                            Update the corresponding GitHub
-                                            Secret
-                                            (<code
-                                                class="bg-slate-100 px-1 rounded">DOCKERHUB_TOKEN</code>)
-                                            immediately after rotation to
-                                            prevent
-                                            CI/CD failures.
-                                        </p>
-                                    </div>
-                                </li>
+                                <i
+                                    class="fa-solid fa-arrow-right text-slate-300 text-2xl"></i>
 
-                                <li class="flex items-start">
+                                <!-- Step 2 -->
+                                <div
+                                    class="flex-1 bg-purple-50 border-2 border-purple-200 rounded-xl p-5 text-center">
                                     <div
-                                        class="flex-shrink-0 w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mr-5">
+                                        class="w-12 h-12 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xl mb-3">
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+                                    <h4
+                                        class="font-bold text-slate-800 mb-2">2.
+                                        Update Data</h4>
+                                    <p class="text-sm text-slate-600">
+                                        Executes ingestion and preprocessing
+                                        to
+                                        obtain the latest available data.
+                                    </p>
+                                </div>
+
+                                <i
+                                    class="fa-solid fa-arrow-right text-slate-300 text-2xl"></i>
+
+                                <!-- Step 3 -->
+                                <div
+                                    class="flex-1 bg-amber-50 border-2 border-amber-200 rounded-xl p-5 text-center">
+                                    <div
+                                        class="w-12 h-12 mx-auto bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-xl mb-3">
                                         <i
-                                            class="fa-solid fa-cubes-stacked"></i>
+                                            class="fa-solid fa-magnifying-glass-chart"></i>
                                     </div>
-                                    <div>
-                                        <h4
-                                            class="text-lg font-bold text-slate-800 mb-1">Dependency
-                                            Management</h4>
-                                        <p
-                                            class="text-slate-600 text-sm leading-relaxed">
-                                            Keep <code
-                                                class="bg-slate-100 px-1 rounded">requirements.txt</code>
-                                            dependencies current to avoid
-                                            vulnerabilities. Always re-run the
-                                            full
-                                            71-test Pytest suite locally before
-                                            committing dependency upgrades.
-                                            Review
-                                            GitHub Actions run history for
-                                            failed
-                                            jobs before merging new code
-                                            changes.
-                                        </p>
-                                    </div>
-                                </li>
+                                    <h4
+                                        class="font-bold text-slate-800 mb-2">3.
+                                        Monitor Drift</h4>
+                                    <p class="text-sm text-slate-600">
+                                        Runs <code
+                                            class="bg-white px-1.5 py-0.5 rounded font-mono text-xs">monitor.py</code>
+                                        and generates the drift report.
+                                    </p>
+                                </div>
 
+                                <i
+                                    class="fa-solid fa-arrow-right text-slate-300 text-2xl"></i>
+
+                                <!-- Step 4 -->
+                                <div
+                                    class="flex-1 bg-emerald-50 border-2 border-emerald-200 rounded-xl p-5 text-center">
+                                    <div
+                                        class="w-12 h-12 mx-auto bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl mb-3">
+                                        <i class="fa-solid fa-rotate"></i>
+                                    </div>
+                                    <h4
+                                        class="font-bold text-slate-800 mb-2">4.
+                                        Maintain Model</h4>
+                                    <p class="text-sm text-slate-600">
+                                        If maintenance criteria are met, the
+                                        training and evaluation process can
+                                        be
+                                        executed.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- Bottom explanation -->
+                            <div class="mt-8 grid grid-cols-3 gap-5">
+
+                                <div
+                                    class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                                    <div
+                                        class="flex items-center text-slate-700 font-bold mb-2">
+                                        <i
+                                            class="fa-solid fa-code-branch text-brand-500 mr-2"></i>
+                                        Same CI Workflow
+                                    </div>
+                                    <p
+                                        class="text-xs text-slate-500 leading-relaxed">
+                                        The maintenance process is
+                                        implemented
+                                        as an additional job in the existing
+                                        GitHub Actions CI workflow.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                                    <div
+                                        class="flex items-center text-slate-700 font-bold mb-2">
+                                        <i
+                                            class="fa-solid fa-chart-line text-brand-500 mr-2"></i>
+                                        Periodic Monitoring
+                                    </div>
+                                    <p
+                                        class="text-xs text-slate-500 leading-relaxed">
+                                        Weekly execution provides a
+                                        recurring
+                                        checkpoint to identify changes in
+                                        the
+                                        incoming data distribution.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                                    <div
+                                        class="flex items-center text-slate-700 font-bold mb-2">
+                                        <i
+                                            class="fa-solid fa-file-lines text-brand-500 mr-2"></i>
+                                        Traceable Results
+                                    </div>
+                                    <p
+                                        class="text-xs text-slate-500 leading-relaxed">
+                                        Execution results and generated
+                                        reports
+                                        remain available in the GitHub
+                                        Actions
+                                        run history and artifacts.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slide-footer">
+                    <span>MLOps Pipeline — News Classification | IT Handoff
+                        Report</span>
+                    <span>9</span>
+                </div>
+            </section>
+
+            <!-- Slide 9: Model Registry & Gate -->
+            <section class="slide">
+                <div class="slide-header">
+                    <div>
+                        <h2 class="text-3xl font-bold text-slate-900">Model
+                            Registry & Promotion Gate</h2>
+                        <p class="text-slate-500 mt-1">Safeguarding
+                            Production
+                            Quality</p>
+                    </div>
+                    <i
+                        class="fa-solid fa-shield-halved text-brand-500 text-3xl"></i>
+                </div>
+                <div
+                    class="slide-content bg-slate-50 flex items-center justify-center h-full">
+
+                    <div class="flex gap-12 w-full max-w-5xl">
+                        <!-- Visual representation -->
+                        <div
+                            class="w-1/2 flex flex-col items-center justify-center space-y-6 relative">
+
+                            <div
+                                class="bg-white p-6 rounded-2xl shadow border-2 border-slate-200 text-center w-full relative z-10">
+                                <h4 class="font-bold text-slate-700 mb-2">3
+                                    MLflow Runs</h4>
+                                <p class="text-xs text-slate-500">Compared
+                                    on
+                                    validation accuracy</p>
+                            </div>
+
+                            <div
+                                class="h-10 w-1 bg-yellow-400 absolute top-20 z-0"></div>
+                            <i
+                                class="fa-solid fa-arrow-down absolute top-28 z-0 text-yellow-500"></i>
+
+                            <div
+                                class="bg-yellow-50 p-6 rounded-2xl shadow-md border-2 border-yellow-300 text-center w-full relative z-10">
+                                <h4
+                                    class="font-bold text-yellow-800 text-xl mb-1 flex items-center justify-center"><i
+                                        class="fa-solid fa-triangle-exclamation mr-2"></i>
+                                    Accuracy Gate</h4>
+                                <p
+                                    class="text-sm font-bold text-yellow-700 bg-yellow-200 py-1 rounded mt-2">Must
+                                    exceed threshold: > 0.87</p>
+                            </div>
+
+                            <div
+                                class="h-10 w-1 bg-emerald-400 absolute top-56 z-0"></div>
+                            <i
+                                class="fa-solid fa-arrow-down absolute top-64 z-0 text-emerald-500"></i>
+
+                            <div
+                                class="bg-emerald-50 p-6 rounded-2xl shadow-lg border-2 border-emerald-400 text-center w-full relative z-10 mt-4">
+                                <h4
+                                    class="font-bold text-emerald-800 text-xl mb-1 flex items-center justify-center"><i
+                                        class="fa-solid fa-check-double mr-2"></i>
+                                    Production</h4>
+                                <p
+                                    class="text-sm text-emerald-700 font-medium">Promoted
+                                    in MLflow Model Registry</p>
+                            </div>
+                        </div>
+
+                        <!-- Text description -->
+                        <div
+                            class="w-1/2 flex flex-col justify-center space-y-8">
+                            <div>
+                                <h3
+                                    class="text-2xl font-bold text-slate-800 mb-3 flex items-center">
+                                    <span
+                                        class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">1</span>
+                                    The Gate Mechanism
+                                </h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    The best run, determined by validation
+                                    accuracy during the CI/CD pipeline, is
+                                    registered in the <strong>MLflow Model
+                                        Registry</strong>. It is then
+                                    immediately evaluated against a
+                                    hardcoded
+                                    accuracy gate.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg shadow-sm">
+                                <p
+                                    class="text-slate-700 text-sm font-medium">
+                                    This gate is the main safeguard the IT
+                                    team
+                                    relies on. A degraded model that
+                                    performs
+                                    worse than the baseline (0.87) can
+                                    <strong>never</strong> reach the serving
+                                    layer automatically.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-2xl font-bold text-slate-800 mb-3 flex items-center">
+                                    <span
+                                        class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">2</span>
+                                    Fallback Strategy
+                                </h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    The FastAPI service loads the Production
+                                    model from MLflow at startup. However,
+                                    it
+                                    incorporates a local <code
+                                        class="bg-slate-100 px-1 rounded font-mono text-sm">.pkl</code>
+                                    fallback if the tracking server is
+                                    unreachable. This ensures the API stays
+                                    highly available even during MLflow
+                                    maintenance windows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slide-footer">
+                    <span>MLOps Pipeline — News Classification | IT Handoff
+                        Report</span>
+                    <span>9</span>
+                </div>
+            </section>
+
+            <!-- Slide 10: CT & CM -->
+            <section class="slide">
+                <div class="slide-header">
+                    <div>
+                        <h2
+                            class="text-3xl font-bold text-slate-900">Continuous
+                            Training & Monitoring</h2>
+                        <p class="text-slate-500 mt-1">Handling Data Drift
+                            and
+                            Model Degradation</p>
+                    </div>
+                    <i
+                        class="fa-solid fa-chart-line text-brand-500 text-3xl"></i>
+                </div>
+                <div
+                    class="slide-content bg-slate-50 flex flex-col items-center justify-center h-full">
+
+                    <div class="text-center mb-10 max-w-3xl">
+                        <h3
+                            class="text-2xl font-bold text-slate-800 mb-4">Detecting
+                            Concept and Data Drift in Production</h3>
+                        <p class="text-slate-600 text-lg">We utilize
+                            <strong>Evidently AI</strong> to monitor
+                            statistical
+                            shifts between the original training reference
+                            data
+                            and live production inference data.</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-8 w-full max-w-5xl">
+
+                        <!-- CM -->
+                        <div
+                            class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-500">
+                            <div class="flex items-center mb-6">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-chart text-3xl text-blue-500 mr-4"></i>
+                                <h4
+                                    class="text-xl font-bold text-slate-800">Continuous
+                                    Monitoring (CM)</h4>
+                            </div>
+                            <ul class="space-y-4 text-slate-600">
+                                <li class="flex items-start">
+                                    <i
+                                        class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i>
+                                    <span>Tracks
+                                        <strong>Kolmogorov-Smirnov</strong>
+                                        and
+                                        <strong>PSI</strong> metrics to
+                                        detect
+                                        shifts in feature
+                                        distributions.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i
+                                        class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i>
+                                    <span>Monitors <strong>F1-score
+                                            degradation</strong> over time
+                                        as
+                                        new ground-truth labels are
+                                        acquired.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i
+                                        class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i>
+                                    <span>Generates HTML reports saved to
+                                        <code
+                                            class="bg-slate-100 text-sm px-1 rounded">reports/drift_report.html</code>.</span>
+                                </li>
                             </ul>
                         </div>
 
+                        <!-- CT -->
+                        <div
+                            class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-emerald-500">
+                            <div class="flex items-center mb-6">
+                                <i
+                                    class="fa-solid fa-robot text-3xl text-emerald-500 mr-4"></i>
+                                <h4
+                                    class="text-xl font-bold text-slate-800">Continuous
+                                    Training (CT)</h4>
+                            </div>
+                            <ul class="space-y-4 text-slate-600">
+                                <li class="flex items-start">
+                                    <i
+                                        class="fa-solid fa-arrow-right text-emerald-500 mt-1 mr-3"></i>
+                                    <span><strong>Automatic retraining
+                                            trigger:</strong> Activated when
+                                        monitoring metrics exceed the
+                                        predefined
+                                        degradation threshold.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i
+                                        class="fa-solid fa-arrow-right text-emerald-500 mt-1 mr-3"></i>
+                                    <span>Pipeline executes a fresh run
+                                        using
+                                        <code
+                                            class="bg-slate-100 text-sm px-1 rounded">dvc
+                                            repro</code> on updated
+                                        datasets.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i
+                                        class="fa-solid fa-arrow-right text-emerald-500 mt-1 mr-3"></i>
+                                    <span>Candidate models are registered in
+                                        MLflow for A/B validation against
+                                        the
+                                        current production model.</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="slide-footer">
-                        <span>MLOps Pipeline — News Classification | IT Handoff
-                            Report</span>
-                        <span>11</span>
+
+                </div>
+                <div class="slide-footer">
+                    <span>MLOps Pipeline — News Classification | IT Handoff
+                        Report</span>
+                    <span>10</span>
+                </div>
+            </section>
+
+            <!-- Slide 11: Ongoing Maintenance Tasks -->
+            <section class="slide">
+                <div class="slide-header">
+                    <div>
+                        <h2
+                            class="text-3xl font-bold text-slate-900">Ongoing
+                            Monitoring & Maintenance Tasks</h2>
+                        <p class="text-slate-500 mt-1">Routine IT Operations
+                            Checklist</p>
                     </div>
-                </section>
+                    <i
+                        class="fa-solid fa-clipboard-check text-brand-500 text-3xl"></i>
+                </div>
+                <div
+                    class="slide-content bg-slate-50 flex items-center justify-center">
 
-            </div>
+                    <div
+                        class="w-full max-w-4xl bg-white p-10 rounded-2xl shadow-lg border border-slate-200">
+                        <ul class="space-y-8">
 
-        </body>
-    </html>
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mr-5">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-lg font-bold text-slate-800 mb-1">Feature
+                                        Drift Monitoring (Evidently AI)</h4>
+                                    <p
+                                        class="text-slate-600 text-sm leading-relaxed">
+                                        The system compares 6 text-derived
+                                        features (length, word count, avg.
+                                        word
+                                        length, sentence count, uppercase &
+                                        digit ratios) against the training
+                                        reference using PSI. Alerts trigger
+                                        when
+                                        PSI exceeds the threshold.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-xl mr-5">
+                                    <i
+                                        class="fa-regular fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-lg font-bold text-slate-800 mb-1">Recommended
+                                        Maintenance Cadence</h4>
+                                    <p
+                                        class="text-slate-600 text-sm leading-relaxed">
+                                        Run the <code
+                                            class="bg-slate-100 px-1 rounded">monitor.py</code>
+                                        script on a scheduled cron job
+                                        (e.g.,
+                                        weekly) and review the generated
+                                        drift
+                                        report. Re-run <code
+                                            class="bg-slate-100 px-1 rounded">dvc
+                                            repro</code> manually to retrain
+                                        if
+                                        drift is detected or accuracy
+                                        degrades
+                                        in production logs.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-xl mr-5">
+                                    <i class="fa-solid fa-key"></i>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-lg font-bold text-slate-800 mb-1">Security
+                                        & Access Management</h4>
+                                    <p
+                                        class="text-slate-600 text-sm leading-relaxed">
+                                        Rotate the DockerHub access token
+                                        periodically for security
+                                        compliance.
+                                        Update the corresponding GitHub
+                                        Secret
+                                        (<code
+                                            class="bg-slate-100 px-1 rounded">DOCKERHUB_TOKEN</code>)
+                                        immediately after rotation to
+                                        prevent
+                                        CI/CD failures.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mr-5">
+                                    <i
+                                        class="fa-solid fa-cubes-stacked"></i>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-lg font-bold text-slate-800 mb-1">Dependency
+                                        Management</h4>
+                                    <p
+                                        class="text-slate-600 text-sm leading-relaxed">
+                                        Keep <code
+                                            class="bg-slate-100 px-1 rounded">requirements.txt</code>
+                                        dependencies current to avoid
+                                        vulnerabilities. Always re-run the
+                                        full
+                                        71-test Pytest suite locally before
+                                        committing dependency upgrades.
+                                        Review
+                                        GitHub Actions run history for
+                                        failed
+                                        jobs before merging new code
+                                        changes.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="slide-footer">
+                    <span>MLOps Pipeline — News Classification | IT Handoff
+                        Report</span>
+                    <span>11</span>
+                </div>
+            </section>
+
+        </div>
+
+    </body>
+</html>
